@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. ns1.signal2noise.co.uk.  (
-    2012080100
+    2012080101
     7200             ; refresh (was 86400)
     3600             ; retry
     2419200          ; expire        
@@ -240,3 +240,6 @@ bidello         IN      CNAME   bidello.leone.palladius.eu.
 ciscocom        IN      A       72.163.4.161
 cisco           IN      A       72.163.4.161
 google          IN      A       74.125.232.145
+
+description     IN      TXT     Oggi mi sento molto felice
+test42          IN      A       43.43.43.43
