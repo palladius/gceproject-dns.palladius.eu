@@ -114,6 +114,7 @@ mx               IN      A       192.168.108.25
 quindici         IN      A       192.168.108.25
 posta            IN      A       192.168.108.25
 hostmaster       IN      A       192.168.108.42
+test             IN      A       192.168.108.42
 admin            IN      A       192.168.108.42
 example          IN      A       192.168.108.42
 trentadue        IN      A       192.168.108.42
@@ -123,3 +124,47 @@ posta            IN      A       192.168.108.25
 
 vm16             IN      A       192.168.108.26
 devbis           IN      A       192.168.108.26
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; INTERNAL from palladius.eu
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;svn1                IN      A       192.168.108.16
+;svn2int             IN      A       192.168.108.22
+; vm7: dev 
+;goldy              IN      A       192.168.108.17
+; VM08: www.goliardia.it
+;vm08             IN      A       192.168.108.18
+;vm8              IN      A       192.168.108.18
+;goliardia        IN      A       192.168.108.18
+;*.goliardia      IN      A       192.168.108.18
+;www-int          IN      CNAME   vm08
+
+; VM9: nachos,ldap,...
+;vm9              IN      A       192.168.108.19
+;vm09             IN      A       192.168.108.19
+;nagios-int       IN      A       192.168.108.19
+;ldap-int         IN      A       192.168.108.19
+;dns              IN      A       192.168.108.19
+; VM10: openvpn,sec in generale, magari boh,...
+;vm10              IN     A       192.168.108.20
+;openvpn           IN     A       192.168.108.20
+; VM12: 32bit hamachi e 40GB di disco per backup...
+;vm12                  IN     A       192.168.108.22
+; VM15 (futura) posta exim??? ma perche no dico io
+;mta2             IN      A       192.168.108.25
+;mx               IN      A       192.168.108.25
+;quindici         IN      A       192.168.108.25
+;posta            IN      A       192.168.108.25
+;rt3              IN      A       192.168.108.25
+;ticketing        IN      A       192.168.108.25
+;mail2            IN      A       192.168.108.25
+; VM32 (cagata per prove dns)
+;hostmaster       IN      A       192.168.108.42
+;admin            IN      A       192.168.108.42
+;example          IN      A       192.168.108.42
+;trentadue        IN      A       192.168.108.42
+;mx               IN      A       192.168.108.25
+;quindici         IN      A       192.168.108.25
+;posta            IN      A       192.168.108.25

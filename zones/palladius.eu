@@ -12,7 +12,6 @@ $TTL 86400
 
 palladius.eu.      IN      NS              ns1.palladius.eu.
 palladius.eu.      IN      NS              ns2.palladius.eu.
-;palladius.eu.      IN      MX     10       mta.palladius.eu.
 
 ; utilita mie, localhost approssimato all inverosimile :)
 localhost                IN      A      127.0.0.1
@@ -59,7 +58,9 @@ vm42                     IN      A       192.168.108.52
 
 ; vm15 internal
 ; metto l'ip onterno come failover... e' una maialata all'esterno ma all'interno dovrebbe fluire almeno...
-;mail.palladius.eu.         IN      MX     10       mta2.palladius.eu.
+;palladius.eu.              IN      MX     10       mta.palladius.eu.
+palladius.eu.               IN      MX     10       mta
+palladius.eu.               IN      MX     20       mta2
 ;mail.palladius.eu.         IN      MX     20       mail2.palladius.eu.
 ;internal.palladius.eu.     IN      MX     10       mta2.palladius.eu.
 ;www.palladius.eu.          IN      MX     10       mail2.palladius.eu.
@@ -110,58 +111,6 @@ rails2           IN      CNAME	 dev
 ;*.rails          IN      CNAME	 dev
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; INTERNA...
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-; vm6: dev e svn...
-; vm6 non lho mai usato per svn quindi lo sposto..
-;svn                IN      A       192.168.108.22
-svn1                IN      A       192.168.108.16
-svn2int             IN      A       192.168.108.22
-
-; vm7: dev 
-goldy              IN      A       192.168.108.17
-
-; VM08: www.goliardia.it
-vm08             IN      A       192.168.108.18
-vm8              IN      A       192.168.108.18
-goliardia        IN      A       192.168.108.18
-;*.goliardia      IN      A       192.168.108.18
-;www-int          IN      CNAME   vm08
-
-
-; VM9: nachos,ldap,...
-vm9              IN      A       192.168.108.19
-vm09             IN      A       192.168.108.19
-nagios-int       IN      A       192.168.108.19
-ldap-int         IN      A       192.168.108.19
-dns              IN      A       192.168.108.19
-
-; VM10: openvpn,sec in generale, magari boh,...
-vm10              IN     A       192.168.108.20
-openvpn           IN     A       192.168.108.20
-
-; VM12: 32bit hamachi e 40GB di disco per backup...
-vm12                  IN     A       192.168.108.22
-
-; VM15 (futura) posta exim??? ma perche no dico io
-mta2             IN      A       192.168.108.25
-mx               IN      A       192.168.108.25
-quindici         IN      A       192.168.108.25
-posta            IN      A       192.168.108.25
-rt3              IN      A       192.168.108.25
-ticketing        IN      A       192.168.108.25
-mail2            IN      A       192.168.108.25
-
-; VM32 (cagata per prove dns)
-hostmaster       IN      A       192.168.108.42
-admin            IN      A       192.168.108.42
-example          IN      A       192.168.108.42
-trentadue        IN      A       192.168.108.42
-mx               IN      A       192.168.108.25
-quindici         IN      A       192.168.108.25
-posta            IN      A       192.168.108.25
 
 kermit          IN      CNAME   kermit.hetzner.palladius.eu.
 puppet          IN      CNAME   puppet.hetzner.palladius.eu.
@@ -243,3 +192,8 @@ google          IN      A       74.125.232.145
 
 description     IN      TXT     Oggi mi sento molto felice
 test42          IN      A       43.43.43.43
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; TESTS
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+palladius.eu.   TXT             "v=spf1 -all"

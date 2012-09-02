@@ -12,3 +12,4 @@ named.conf.default-zones
 named.conf.options
 rndc.key
 zones.rfc1918
+*~
