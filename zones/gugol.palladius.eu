@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. hostmaster.palladius.eu. (
-	2012090200
+	2012090201
 	7200 ; refresh (was 86400)
 	3600 ; retry
  	2419200 ; expire        
@@ -22,7 +22,7 @@ mta              IN      MX      20       mail.google.palladius.eu.
 sobenme          IN      A       192.168.108.18
 
 nagios           IN    CNAME   nadine
-mail             IN    CNAME   mallory
+mail2            IN    CNAME   mallory
 nagios2          IN    CNAME   bernadine
 ftp              IN    CNAME   fatima
 hamachi          IN    CNAME   roberta
