@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. hostmaster.palladius.eu. (
-	2012090201
+	2012091500
 	7200 ; refresh (was 86400)
 	3600 ; retry
  	2419200 ; expire        
@@ -45,6 +45,10 @@ sakura-fatima           IN    A       173.255.120.163
 sakura-roberta          IN    A       173.255.120.163
 sakura-vicky            IN    A       173.255.116.167
 
+sakura-ippub1           IN    A       108.59.85.44
+sakura-ippub2           IN    A       108.59.94.100
+sakura-ippub3           IN    A       173.255.116.17
+sakura-ippub4           IN    A       173.255.116.170
 ;;;;;;;;;;;;;;;
 ; BIGLAMP
 biglamp-septober        IN    A       8.34.213.202
