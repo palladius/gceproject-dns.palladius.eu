@@ -35,7 +35,7 @@ zone "gugol.palladius.eu" {
 };
 zone "g.palladius.eu" {
         type master;
-        file "/etc/bind/zones/gugol.palladius.eu";
+        file "/etc/bind/zones/g.palladius.eu";
 };
 zone "google.palladius.eu" {
         type master;

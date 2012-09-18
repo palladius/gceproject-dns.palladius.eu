@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. hostmaster.palladius.eu. (
-	2012091500
+	2012091801
 	7200 ; refresh (was 86400)
 	3600 ; retry
  	2419200 ; expire        
@@ -16,9 +16,9 @@ derek            IN      A       192.168.108.12
 gricchione       IN      A       192.168.108.13
 
 mail             IN      MX      10       mta.palladius.eu.
-mail             IN      MX      20       mallory.google.palladius.eu.
+mail             IN      MX      20       mallory.gugol.palladius.eu.
 mta              IN      MX      10       mail2.palladius.eu.
-mta              IN      MX      20       mail.google.palladius.eu.
+mta              IN      MX      20       mail.gugol.palladius.eu.
 sobenme          IN      A       192.168.108.18
 
 nagios           IN    CNAME   nadine
@@ -31,7 +31,6 @@ wiki             IN    CNAME   vicky
 
 test             IN    A       1.2.3.4
 www              IN    A       108.59.83.182
-mallory          IN    A       1.2.3.4
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Sakura stuff
@@ -40,15 +39,25 @@ denise                  IN    CNAME   sakura-denise
 vicky                   IN    CNAME   sakura-vicky
 fatima                  IN    CNAME   sakura-fatima
 roberta                 IN    CNAME   sakura-roberta
-sakura-denise           IN    A       108.59.95.93
-sakura-fatima           IN    A       173.255.120.163
-sakura-roberta          IN    A       173.255.120.163
-sakura-vicky            IN    A       173.255.116.167
+
+; IP1: Denise / DNS
+sakura-denise           IN    CNAME   sakura-ippub1
+denise.sakura           IN    CNAME   sakura-ippub1
+; IP2: Eloisa (www.goliardia.it)
+eloisa                  IN    CNAME   sakura-ippub2
+goliardia               IN    CNAME   sakura-ippub2
+; IP3: Palladia (www.palladius.it)
+palladia                IN    CNAME   sakura-ippub3
+palladius               IN    CNAME   sakura-ippub3
+; IP4: Mallory (Mail)
+mallory.sakura          IN    CNAME   sakura-ippub4
+mallory                 IN    CNAME   sakura-ippub4
 
 sakura-ippub1           IN    A       108.59.85.44
 sakura-ippub2           IN    A       108.59.94.100
 sakura-ippub3           IN    A       173.255.116.17
 sakura-ippub4           IN    A       173.255.116.170
+
 ;;;;;;;;;;;;;;;
 ; BIGLAMP
 biglamp-septober        IN    A       8.34.213.202
