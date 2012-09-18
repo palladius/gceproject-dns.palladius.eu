@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. ns1.signal2noise.co.uk.  (
-    2012091800
+    2012091801
     7200             ; refresh (was 86400)
     3600             ; retry
     2419200          ; expire        
