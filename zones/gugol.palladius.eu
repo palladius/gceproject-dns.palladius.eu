@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. hostmaster.palladius.eu. (
-	2012091802
+	2012091803
 	7200 ; refresh (was 86400)
 	3600 ; retry
  	2419200 ; expire        
@@ -38,6 +38,7 @@ www              IN    A       108.59.83.182
 vicky                   IN    CNAME   sakura-vicky
 fatima                  IN    CNAME   sakura-fatima
 roberta                 IN    CNAME   sakura-roberta
+riclife                 IN    A       10.240.49.47
 
 ; IP1: Denise / DNS
 denise                  IN    CNAME   sakura-ippub1
