@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. ns1.signal2noise.co.uk.  (
-    2012080101
+    2012091800
     7200             ; refresh (was 86400)
     3600             ; retry
     2419200          ; expire        
@@ -157,10 +157,15 @@ hioria           IN      CNAME   ioria.hamachi.palladius.eu.
 hnaucrate        IN      CNAME   naucrate.hamachi.palladius.eu.
 hricfinestre     IN      CNAME   ricfinestre.hamachi.palladius.eu.
 
-;;;;;;;;;;;;;;;;;
-;; Dell stuff
-;;;;;;;;;;;;;;;;;
-salsa     IN      CNAME   salsa.dell.palladius.eu.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Gugol
+; gugol stuff around...
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+denise          IN      CNAME   denise.gugol.palladius.eu.
+riclife         IN      CNAME   riclife.gugol.palladius.eu.
+goliardia       IN      CNAME   goliardia.gugol.palladius.eu.
+palladius       IN      CNAME   palladius.gugol.palladius.eu.
+mallory         IN      CNAME   mallory.gugol.palladius.eu.
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; distilleria
@@ -171,9 +176,6 @@ nassau          IN      CNAME   nassau.dundrum.palladius.eu.
 hansel2         IN      CNAME   hansel.dundrum.palladius.eu.
 blackrock       IN      CNAME   blackrock.dundrum.palladius.eu.
 blackrock2      IN      CNAME   blackrock2.dundrum.palladius.eu.
-hansel          IN      CNAME   palladius.dyndns.org.
-dundrummery     IN      CNAME   palladius.dyndns.org.
-dundrum         IN      CNAME   palladius.dyndns.org.
 esculapio       IN      CNAME   esculapio.distillery.palladius.eu.
 carmela         IN      CNAME   carmela.distillery.palladius.eu.
 ciscolo         IN      CNAME   ciscolo.distillery.palladius.eu.
