@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. hostmaster.palladius.eu. (
-	2012091801
+	2012091802
 	7200 ; refresh (was 86400)
 	3600 ; retry
  	2419200 ; expire        
@@ -35,12 +35,12 @@ www              IN    A       108.59.83.182
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Sakura stuff
 ; denise.c.sakura.google.com.internal
-denise                  IN    CNAME   sakura-denise
 vicky                   IN    CNAME   sakura-vicky
 fatima                  IN    CNAME   sakura-fatima
 roberta                 IN    CNAME   sakura-roberta
 
 ; IP1: Denise / DNS
+denise                  IN    CNAME   sakura-ippub1
 sakura-denise           IN    CNAME   sakura-ippub1
 denise.sakura           IN    CNAME   sakura-ippub1
 ; IP2: Eloisa (www.goliardia.it)
