@@ -171,11 +171,11 @@ mallory         IN      CNAME   mallory.gugol.palladius.eu.
 ; distilleria
 ; hansel è sshacquabile dall'esterno porta 22 ora.. con o senza hamachi tanto pwd è difficile
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-naucrate        IN      CNAME   naucrate.dundrum.palladius.eu.
-nassau          IN      CNAME   nassau.dundrum.palladius.eu.
-hansel2         IN      CNAME   hansel.dundrum.palladius.eu.
-blackrock       IN      CNAME   blackrock.dundrum.palladius.eu.
-blackrock2      IN      CNAME   blackrock2.dundrum.palladius.eu.
+naucrate        IN      CNAME   naucrate.casa.palladius.eu.
+nassau          IN      CNAME   nassau.casa.palladius.eu.
+hansel2         IN      CNAME   hansel.casa.palladius.eu.
+blackrock       IN      CNAME   blackrock.casa.palladius.eu.
+blackrock2      IN      CNAME   blackrock2.casa.palladius.eu.
 esculapio       IN      CNAME   esculapio.distillery.palladius.eu.
 carmela         IN      CNAME   carmela.distillery.palladius.eu.
 ciscolo         IN      CNAME   ciscolo.distillery.palladius.eu.

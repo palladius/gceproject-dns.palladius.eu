@@ -21,7 +21,7 @@ loopback                 IN      A      127.0.1.1
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-dundrum                  IN      A       192.168.1.0
+casa                  IN      A       192.168.1.0
 
 ; GeoLocation example from RFC 1876
 ; pipex.net.                    LOC   52 14 05 N 00 08 50 E 10m
@@ -30,7 +30,7 @@ dundrum                  IN      A       192.168.1.0
 ; 
 ; Casa Distillery 53.3491 -6.2723
 ; che diventa: 53° 21'  N 6° 16' 20''  W
-dundrum.palladius.eu.   LOC    53 21 N 6 16 20.123 W 10m
+casa.palladius.eu.   LOC    53 21 N 6 16 20.123 W 10m
 
 ; Cisco EPC2425, eth0: e4:48:c7:5d:df:14
 dundrummery1    IN      A       192.168.1.1
