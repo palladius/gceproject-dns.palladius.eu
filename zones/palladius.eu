@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. ns1.signal2noise.co.uk.  (
-    2012091801
+    2012091802
     7200             ; refresh (was 86400)
     3600             ; retry
     2419200          ; expire        
@@ -162,7 +162,7 @@ hricfinestre     IN      CNAME   ricfinestre.hamachi.palladius.eu.
 ; gugol stuff around...
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 denise          IN      CNAME   denise.gugol.palladius.eu.
-riclife         IN      CNAME   riclife.gugol.palladius.eu.
+;riclife         IN      CNAME   riclife.gugol.palladius.eu.
 goliardia       IN      CNAME   goliardia.gugol.palladius.eu.
 palladius       IN      CNAME   palladius.gugol.palladius.eu.
 mallory         IN      CNAME   mallory.gugol.palladius.eu.
