@@ -18,14 +18,9 @@ zone "hamachi.palladius.eu" {
         file "/etc/bind/zones/hamachi.palladius.eu";
         };
 
-#zone "heanet.palladius.eu" {
-#        type master;
-#        file "/etc/bind/zones/heanet.palladius.eu";
-#};
-
-zone "dundrum.palladius.eu" {
+zone "hoganpl.palladius.eu" {
         type master;
-        file "/etc/bind/zones/dundrum.palladius.eu";
+        file "/etc/bind/zones/hoganpl.palladius.eu";
 };
 ################################################################################
 # three aliases for Google: Google, Gugol, G.
