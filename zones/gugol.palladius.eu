@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. hostmaster.palladius.eu. (
-	2012091804
+	2012092100
 	7200 ; refresh (was 86400)
 	3600 ; retry
  	2419200 ; expire        
@@ -47,9 +47,10 @@ denise.sakura           IN    CNAME   sakura-ippub1
 ; IP2: Eloisa (www.goliardia.it)
 eloisa                  IN    CNAME   sakura-ippub2
 goliardia               IN    CNAME   sakura-ippub2
-; IP3: Palladia (www.palladius.it)
+; IP3: www/Palladia (www.palladius.it)
 palladia                IN    CNAME   sakura-ippub3
 palladius               IN    CNAME   sakura-ippub3
+www                     IN    CNAME   sakura-ippub3
 ; IP4: Mallory (Mail)
 mallory.sakura          IN    CNAME   sakura-ippub4
 mallory                 IN    CNAME   sakura-ippub4
