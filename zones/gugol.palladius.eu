@@ -1,25 +1,30 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. hostmaster.palladius.eu. (
-	2012092100
+	2012092101
 	7200 ; refresh (was 86400)
 	3600 ; retry
  	2419200 ; expire        
 	3600 ; ttl (was 60, and 3000 before that)
 )
 
-@                IN      NS      ns.palladius.eu.
-@                IN      NS      ns1.signal2noise.co.uk.
+;                            YYYY MM DD VER
+;                            2012 09 21 01ver
+date             IN    A       212.9.21.01
 
-nadine           IN      A       108.59.80.172
-bernadine        IN      A       108.59.80.225
-derek            IN      A       192.168.108.12
-gricchione       IN      A       192.168.108.13
+@                IN    NS      ns.palladius.eu.
+@                IN    NS      ns1.signal2noise.co.uk.
 
-mail             IN      MX      10       mta.palladius.eu.
-mail             IN      MX      20       mallory.gugol.palladius.eu.
-mta              IN      MX      10       mail2.palladius.eu.
-mta              IN      MX      20       mail.gugol.palladius.eu.
-sobenme          IN      A       192.168.108.18
+nadine           IN    A       108.59.80.172
+bernadine        IN    A       108.59.80.225
+derek            IN    A       192.168.108.12
+gricchione       IN    A       192.168.108.13
+
+mail             IN    MX      10  mta.palladius.eu.
+mail             IN    MX      20  mallory.gugol.palladius.eu.
+mta              IN    MX      10  mail2.palladius.eu.
+mta              IN    MX      20  mail.gugol.palladius.eu.
+
+;sobenme          IN    A       192.168.108.18
 
 nagios           IN    CNAME   nadine
 mail2            IN    CNAME   mallory
