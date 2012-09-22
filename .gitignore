@@ -13,3 +13,5 @@ named.conf.options
 rndc.key
 zones.rfc1918
 *~
+.svn/
+.zones-svn/
