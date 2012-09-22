@@ -1,0 +1,8 @@
+#!/bin/sh
+
+VER=1.1
+cd /etc/bind && 
+	git pull origin master && 
+		service bind9 reload && 
+			touch /etc/bind/cron-updated-script.touch || 
+				touch /etc/bind/cron-updated-scrpt-err$?.touch
