@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. hostmaster.palladius.eu. (
-	2012092101
+	2012092105
 	7200 ; refresh (was 86400)
 	3600 ; retry
  	2419200 ; expire        
@@ -9,7 +9,7 @@ $TTL 86400
 
 ;                            YYYY MM DD VER
 ;                            2012 09 21 01ver
-date             IN    A       212.9.21.01
+date             IN    A       212.9.21.4
 
 @                IN    NS      ns.palladius.eu.
 @                IN    NS      ns1.signal2noise.co.uk.
@@ -23,8 +23,6 @@ mail             IN    MX      10  mta.palladius.eu.
 mail             IN    MX      20  mallory.gugol.palladius.eu.
 mta              IN    MX      10  mail2.palladius.eu.
 mta              IN    MX      20  mail.gugol.palladius.eu.
-
-;sobenme          IN    A       192.168.108.18
 
 nagios           IN    CNAME   nadine
 mail2            IN    CNAME   mallory
@@ -55,10 +53,10 @@ goliardia               IN    CNAME   sakura-ippub2
 ; IP3: www/Palladia (www.palladius.it)
 palladia                IN    CNAME   sakura-ippub3
 palladius               IN    CNAME   sakura-ippub3
-www                     IN    CNAME   sakura-ippub3
+www2                    IN    CNAME   sakura-ippub3
 ; IP4: Mallory (Mail)
 mallory.sakura          IN    CNAME   sakura-ippub4
-mallory                 IN    CNAME   sakura-ippub4
+mallory                 IN    A       173.255.116.170
 
 sakura-ippub1           IN    A       108.59.85.44
 sakura-ippub2           IN    A       108.59.94.100
