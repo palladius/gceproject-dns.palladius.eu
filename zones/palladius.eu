@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. ns1.signal2noise.co.uk.  (
-    2012092200
+    2012092400
     7200             ; refresh (was 86400)
     3600             ; retry
     2419200          ; expire        
@@ -83,8 +83,6 @@ mta      	                 IN  A      188.40.90.184
 ; ippub3=services                     
 www                        IN  A      188.40.90.186
 www2                       IN  A      188.40.90.186
-www3                       IN  A      188.40.90.186
-www4                       IN  A      188.40.90.186
 pub3                       IN  A      188.40.90.186
 jabber                     IN  A      188.40.90.186
 rt                         IN  A      188.40.90.186
@@ -92,7 +90,6 @@ nagios                     IN  CNAME  pub3
 nachos                     IN  CNAME  pub3
 services                   IN  CNAME  pub3
 ldap                       IN  CNAME  pub3
-www6                       IN  CNAME  pub3
 
 
 ; DEV dall esterno praticamente solo x me
@@ -163,9 +160,13 @@ hricfinestre     IN      CNAME   ricfinestre.hamachi.palladius.eu.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 date             IN      CNAME   date.gugol.palladius.eu.
 denise           IN      CNAME   denise.gugol.palladius.eu.
+dns2             IN      CNAME   denise.gugol.palladius.eu.
 ;riclife          IN      CNAME   riclife.gugol.palladius.eu.
-;goliardia        IN      CNAME   goliardia.gugol.palladius.eu.
-;palladius        IN      CNAME   palladius.gugol.palladius.eu.
+eloisa           IN      CNAME   eloisa.g.palladius.eu.
+goliardia2       IN      CNAME   eloisa.g.palladius.eu.
+palladia         IN      CNAME   palladia.g.palladius.eu.
+palladius        IN      CNAME   palladia.g.palladius.eu.
+www3             IN      CNAME   palladia.g.palladius.eu.
 ;mallory          IN      CNAME   mallory.gugol.palladius.eu.
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
