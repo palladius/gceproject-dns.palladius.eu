@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. ns1.signal2noise.co.uk.  (
-    2012092400
+    2012092401
     7200             ; refresh (was 86400)
     3600             ; retry
     2419200          ; expire        
@@ -61,9 +61,7 @@ vm42                     IN      A       192.168.108.52
 ;palladius.eu.              IN      MX     10       mta.palladius.eu.
 palladius.eu.               IN      MX     10       mta
 palladius.eu.               IN      MX     20       mta2
-;mail.palladius.eu.         IN      MX     20       mail2.palladius.eu.
 ;internal.palladius.eu.     IN      MX     10       mta2.palladius.eu.
-;www.palladius.eu.          IN      MX     10       mail2.palladius.eu.
 
 ; IP pubblici di Hetzner
 ippub0  	                 IN	A	188.40.90.151
@@ -167,7 +165,8 @@ goliardia2       IN      CNAME   eloisa.g.palladius.eu.
 palladia         IN      CNAME   palladia.g.palladius.eu.
 palladius        IN      CNAME   palladia.g.palladius.eu.
 www3             IN      CNAME   palladia.g.palladius.eu.
-;mallory          IN      CNAME   mallory.gugol.palladius.eu.
+mallory          IN      CNAME   mallory.gugol.palladius.eu.
+mail2            IN      CNAME   mallory.gugol.palladius.eu.
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; distilleria
