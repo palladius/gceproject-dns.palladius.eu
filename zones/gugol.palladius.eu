@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. hostmaster.palladius.eu. (
-	2012092400
+	2012092401
 	7200 ; refresh (was 86400)
 	3600 ; retry
  	2419200 ; expire        
@@ -9,7 +9,7 @@ $TTL 86400
 
 ;                            YYYY MM DD VER
 ;                            2012 09 21 01ver
-date             IN    A       212.9.24.0
+date             IN    A       212.9.24.1
 
 @                IN    NS      ns.palladius.eu.
 @                IN    NS      denise.palladius.eu.
