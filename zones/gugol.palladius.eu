@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. hostmaster.palladius.eu. (
-	2012092105
+	2012092400
 	7200 ; refresh (was 86400)
 	3600 ; retry
  	2419200 ; expire        
@@ -9,9 +9,10 @@ $TTL 86400
 
 ;                            YYYY MM DD VER
 ;                            2012 09 21 01ver
-date             IN    A       212.9.21.4
+date             IN    A       212.9.24.0
 
 @                IN    NS      ns.palladius.eu.
+@                IN    NS      denise.palladius.eu.
 @                IN    NS      ns1.signal2noise.co.uk.
 
 nadine           IN    A       108.59.80.172
@@ -33,12 +34,11 @@ dns              IN    CNAME   denise
 wiki             IN    CNAME   vicky
 
 test             IN    A       1.2.3.4
-www              IN    A       108.59.83.182
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Sakura stuff
 ; denise.c.sakura.google.com.internal
-vicky                   IN    CNAME   sakura-vicky
+vicky                   IN    A       8.35.194.230
 fatima                  IN    CNAME   sakura-fatima
 roberta                 IN    CNAME   sakura-roberta
 riclife                 IN    A       8.34.218.102
@@ -53,10 +53,12 @@ goliardia               IN    CNAME   sakura-ippub2
 ; IP3: www/Palladia (www.palladius.it)
 palladia                IN    CNAME   sakura-ippub3
 palladius               IN    CNAME   sakura-ippub3
+www                     IN    CNAME   sakura-ippub3
 www2                    IN    CNAME   sakura-ippub3
-; IP4: Mallory (Mail)
-mallory.sakura          IN    CNAME   sakura-ippub4
+; IP4: Mallory (Mail) - ippub4
+mallory.sakura          IN    CNAME   173.255.116.170
 mallory                 IN    A       173.255.116.170
+smtp                    IN    A       173.255.116.170
 
 sakura-ippub1           IN    A       108.59.85.44
 sakura-ippub2           IN    A       108.59.94.100

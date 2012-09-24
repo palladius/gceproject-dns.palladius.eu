@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. ns1.signal2noise.co.uk.  (
-    2012092401
+    2012092402
     7200             ; refresh (was 86400)
     3600             ; retry
     2419200          ; expire        
@@ -12,6 +12,7 @@ $TTL 86400
 
 palladius.eu.      IN      NS              ns1.palladius.eu.
 palladius.eu.      IN      NS              ns2.palladius.eu.
+palladius.eu.      IN      NS              ns3.palladius.eu.
 
 ; utilita mie, localhost approssimato all inverosimile :)
 localhost                IN      A      127.0.0.1
@@ -27,9 +28,13 @@ wunderbar   IN    SSHFP  2 1 50fb687426c13e44fe7ddbad903978875346d896 ; ssh key 
 
 svn         IN    CNAME      wunderbar
 git         IN    CNAME      wunderbar
+; this VM
 ns          IN        A      188.40.90.186
 ns1         IN        A      188.40.90.186
-ns2         IN        A      213.239.194.114
+; google Denise
+ns2         IN        A      108.59.85.44
+; Gareth signa2noise
+ns3         IN        A      213.239.194.114
 ;ns1.signal2noise.co.uk has address 213.239.194.114
 ;ns1.signal2noise.co.uk has IPv6 address 2001:6f8:900:6c0::2
 ; obsoleti ma sempre attuali... viva la coerenza
