@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. ns1.signal2noise.co.uk.  (
-    2012092407
+    2012092408
     7200             ; refresh (was 86400)
     3600             ; retry
     2419200          ; expire        
@@ -173,7 +173,7 @@ palladius        IN      CNAME   palladia.g.palladius.eu.
 www3             IN      CNAME   palladia.g.palladius.eu.
 mallory          IN      CNAME   mallory.gugol.palladius.eu.
 mail2            IN      CNAME   mallory.gugol.palladius.eu.
-mta2             IN      CNAME   mallory.gugol.palladius.eu.
+mta2             IN      A       108.59.85.44
 ;gsutil stuff
 ; FATTO DA ME
 s3               IN      CNAME   public-rcarlesso.storage.googleapis.com
