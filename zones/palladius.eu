@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. ns1.signal2noise.co.uk.  (
-    2012092403
+    2012092404
     7200             ; refresh (was 86400)
     3600             ; retry
     2419200          ; expire        
@@ -8,11 +8,14 @@ $TTL 86400
 )
 
 @                       IN      NS      ns.palladius.eu.
+@                       IN      NS      denise.palladius.eu.
 @                       IN      NS      ns1.signal2noise.co.uk.
 
 palladius.eu.      IN      NS              ns1.palladius.eu.
 palladius.eu.      IN      NS              ns2.palladius.eu.
 palladius.eu.      IN      NS              ns3.palladius.eu.
+
+date               IN      A               212.9.24.4
 
 ; utilita mie, localhost approssimato all inverosimile :)
 localhost                IN      A      127.0.0.1
@@ -99,7 +102,6 @@ ldap                       IN  CNAME  pub3
 dev              IN      A       188.40.90.185
 devpub           IN      A       188.40.90.185
 devext           IN      A       188.40.90.185
-riclife          IN      A       188.40.90.185
 orgie            IN      A       188.40.90.185
 orgie1           IN      CNAME	 orgie
 orgie2           IN      CNAME	 orgie
@@ -161,7 +163,7 @@ hricfinestre     IN      CNAME   ricfinestre.hamachi.palladius.eu.
 ; Gugol
 ; gugol stuff around...
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-date             IN      CNAME   date.gugol.palladius.eu.
+gdate             IN      CNAME   date.gugol.palladius.eu.
 denise           IN      CNAME   denise.gugol.palladius.eu.
 dns2             IN      CNAME   denise.gugol.palladius.eu.
 riclife          IN      CNAME   riclife.gugol.palladius.eu.
