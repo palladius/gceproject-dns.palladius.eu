@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. ns1.signal2noise.co.uk.  (
-    2012092406
+    2012092407
     7200             ; refresh (was 86400)
     3600             ; retry
     2419200          ; expire        
@@ -15,7 +15,7 @@ palladius.eu.      IN      NS              ns1.palladius.eu.
 palladius.eu.      IN      NS              ns2.palladius.eu.
 palladius.eu.      IN      NS              ns3.palladius.eu.
 
-date               IN      A               12.9.24.6
+date               IN      A               12.9.24.7
 
 ; utilita mie, localhost approssimato all inverosimile :)
 localhost                IN      A      127.0.0.1
@@ -69,7 +69,6 @@ vm42                     IN      A       192.168.108.52
 ;palladius.eu.              IN      MX     10       mta.palladius.eu.
 palladius.eu.               IN      MX     10       mta
 palladius.eu.               IN      MX     20       mta2
-;internal.palladius.eu.     IN      MX     10       mta2.palladius.eu.
 
 ; IP pubblici di Hetzner
 ippub0  	                 IN	A	188.40.90.151
@@ -174,6 +173,7 @@ palladius        IN      CNAME   palladia.g.palladius.eu.
 www3             IN      CNAME   palladia.g.palladius.eu.
 mallory          IN      CNAME   mallory.gugol.palladius.eu.
 mail2            IN      CNAME   mallory.gugol.palladius.eu.
+mta2             IN      CNAME   mallory.gugol.palladius.eu.
 ;gsutil stuff
 ; FATTO DA ME
 s3               IN      CNAME   public-rcarlesso.storage.googleapis.com
