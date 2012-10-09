@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. ns1.signal2noise.co.uk.  (
-                        2012011201
+                        2012100900
                         7200             ; refresh (was 86400)
                         3600             ; retry
                         2419200          ; expire        
@@ -22,6 +22,7 @@ loopback                 IN      A      127.0.1.1
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 casa                  IN      A       192.168.1.0
+hoganp                IN      A       192.168.1.0
 
 ; GeoLocation example from RFC 1876
 ; pipex.net.                    LOC   52 14 05 N 00 08 50 E 10m
@@ -34,7 +35,6 @@ casa.palladius.eu.   LOC    53 21 N 6 16 20.123 W 10m
 
 ; Cisco EPC2425, eth0: e4:48:c7:5d:df:14
 dundrummery1    IN      A       192.168.1.1
-dundrummery10   IN      A       192.168.1.10
 dundrummery11   IN      A       192.168.1.11
 dundrummery12   IN      A       192.168.1.12
 dundrummery13   IN      A       192.168.1.13
@@ -51,35 +51,28 @@ dundrummery43   IN      A       192.168.1.43
 dundrummery250  IN      A       192.168.1.250
 dundrummery251  IN      A       192.168.1.251
 dundrummery252  IN      A       192.168.1.252
+eircom          IN      A       192.168.1.254
 
 ; IP STATICI
-ciscolo         IN      CNAME   dundrummery1
-ciscazzo        IN      CNAME   dundrummery1
+ciscolo         IN      CNAME   eircom
+ciscazzo        IN      CNAME   eircom
 naucrate        IN      CNAME   dundrummery250
 nassau          IN      CNAME   dundrummery251
 blackrock-linux IN      CNAME   dundrummery252
 ;;;;;;;;;;;;;;;
 ;;; VARIABILI DHCP dal x.10 al ???
 ;;;;;;;;;;;;;;;
-blackrock-win      IN      CNAME   dundrummery10
-iphone4            IN      CNAME   dundrummery11
-hansel             IN      CNAME   dundrummery12
+blackrock-win      IN      CNAME   192.168.1.3
 bidello            IN      CNAME   dundrummery18
 pappardell         IN      CNAME   dundrummery43
-
-;pappardell-old     IN      CNAME   dundrummery13
 naucrate-win       IN      CNAME   dundrummery17
 ;;; /Variabili
 ;;;;;;;;;;;;;;;
 
 ;;;;;;;; STATICI Name mappings
 iphone4-wif        IN      CNAME   iphone4
-cisco-EPC2425      IN      CNAME   ciscolo
-cisco-eth0         IN      CNAME   ciscolo
-WN7X64-1JQL0Q1     IN      CNAME   pappardell
-naucratexp         IN      CNAME   naucrate-win
-naucrate2          IN      CNAME   naucrate-win
-hansel-wifi        IN      CNAME   hansel
+cisco-EPC2425      IN      CNAME   eircom
+cisco-eth0         IN      CNAME   eircom
 mac                IN      CNAME   hansel
 blackrock-eth0     IN      CNAME   blackrock-win
 blackrock2         IN      CNAME   blackrock-win
@@ -92,7 +85,7 @@ blackrockux        IN      CNAME   blackrock-linux
 00-22-41-fc-16-36  IN      CNAME   hansel-wifi
 d0-67-e5-06-43-07  IN      CNAME   blackrock-eth0
 dc-2b-61-b4-e3-5b  IN      CNAME   iphone4-wif
-e4-48-c7-5d-df-14  IN      CNAME   cisco-eth0
+;e4-48-c7-5d-df-14  IN      CNAME   cisco-eth0
 e5-55-f9-12-8e-f4  IN      CNAME   pappardell
 
 
