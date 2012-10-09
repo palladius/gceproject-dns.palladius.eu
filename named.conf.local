@@ -22,6 +22,11 @@ zone "casa.palladius.eu" {
         type master;
         file "/etc/bind/zones/casa.palladius.eu";
 };
+zone "hoganpl.palladius.eu" {
+        type master;
+        file "/etc/bind/zones/casa.palladius.eu";
+};
+
 ################################################################################
 # three aliases for Google: Google, Gugol, G.
 zone "gugol.palladius.eu" {
