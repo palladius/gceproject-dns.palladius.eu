@@ -1,6 +1,6 @@
 $TTL 86400
 @  IN   SOA  ns.palladius.eu. hostmaster.palladius.eu. (
-	2012092401
+	2013111400
 	7200 ; refresh (was 86400)
 	3600 ; retry
  	2419200 ; expire        
@@ -67,8 +67,9 @@ sakura-ippub4           IN    A       173.255.116.170
 
 ;;;;;;;;;;;;;;;
 ; BIGLAMP
-biglamp-septober        IN    A       8.34.213.202
-biglamp-denise          IN    A       8.34.218.194
+biglamp-septober        IN    A       108.59.83.168
+biglamp-denise          IN    A       8.34.211.95
+biglamp-nadia           IN    A       8.34.209.222
 
 ; http://support.google.com/a/bin/answer.py?hl=en&answer=178723
 provaspf         IN    TXT     "v=spf1 include:_spf.google.com ~all"
